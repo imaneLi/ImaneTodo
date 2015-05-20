@@ -1,0 +1,17 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>TODO.COM</h1>
+ {{ entity.name }} : <br/>
+	A faire avant le <br/>
+	{{ entity.date|date('Y-m-d H:i:s') }}
+	
+	  <ul class="record_actions">
+	    <li>
+        	<a href="{{ path('todo') }}">
+	            Retour
+        	</a>
+	    </li>
+	</ul>
+    <i>CopyRight...</i>
+{% endblock %}
